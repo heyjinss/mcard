@@ -1,0 +1,21 @@
+{
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:prettier/recommended"
+      
+      
+    ],
+    
+"plugins" : ["prettier"],
+"rules": {  // rules에 다음과 같이 추가
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "no-unused-vars": "off"
+    ,"@typescript-eslint/no-unused-vars" :"warn"
+  }
+}
